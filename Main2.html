@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="page01style.css" />
+    <script src="croll.js"></script>
+
+    <style>
+      body {
+        background-color: #000000;
+        color: #ffffff;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h2 class="logo">logo</h2>
+      <nav class="navigation">
+        <a href="#" class="nav-link">home</a>
+        <a href="#" class="nav-link">about</a>
+        <a href="#" class="nav-link">service</a>
+        <a href="#" class="nav-link">contact</a>
+      </nav>
+    </header>
+
+    <section class="parallax">
+      <img src="cat 9 logo.png" id="text" />
+
+      <img src="Layer 2.png" id="ll2" />
+      <img src="Layer 3.png" id="ll3" />
+      <img src="Layer 4.png" id="ll4" />
+      <img src="Layer 5.png" id="ll5" />
+      <img src="Layer 6.png" id="ll6" />
+      <img src="Layer 7.png" id="ll7" />
+    </section>
+    <section class="sec">
+      <h2>parallax Scrolling Website</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad pariatur
+        illo sequi at rem dicta voluptas reiciendis a minus. Perferendis illo
+        est, sequi officia numquam repellendus vero qui blanditiis velit magni
+        ipsa fugiat fuga, dicta ea aliquid facere adipisci nemo dolorem, cumque
+        optio vitae autem. Temporibus, sapiente placeat corporis odit fuga eius
+        commodi dolorum deleniti obcaecati ipsam sequi dolores odio dolore
+        consequatur reprehenderit id laudantium porro, voluptas ratione in
+        tenetur et ipsa at? Amet esse ad quasi quo unde ullam, aliquid iste
+        recusandae alias non? Deleniti hic, illo mollitia id modi nobis debitis,
+        ullam ea fugit similique consequatur doloribus sed saepe, accusamus
+        praesentium aperiam natus, omnis illum quia quam accusamus molestias.
+        Natus nullaaperiam eos nihil aspernatur quia? Unde deleniti quo
+        praesentium dolores minima nulla accusantium obcaecati eius distinctio
+        quia amet eligendi provident veniam, optio quidem reiciendis quod
+        placeat dolor non nostrum earum aut.
+      </p>
+      <br /><br />
+    </section>
+
+    <script>
+      const navLinks = document.querySelectorAll(".nav-link");
+
+      navLinks.forEach((link) => {
+        link.addEventListener("click", function () {
+          navLinks.forEach((link) => link.classList.remove("active"));
+          this.classList.add("active");
+        });
+      });
+    </script>
+    <script>
+      let text1 = document.getElementsById("ll2");
+      let text2 = document.getElementsById("ll3");
+      let text3 = document.getElementsById("ll4");
+      let text4 = document.getElementsById("ll5");
+      let text5 = document.getElementsById("ll6");
+
+      window.addEventListener("scroll", function () {
+        let value = window.scrollY;
+
+        text1.style.left = value * 4.5 + "px";
+        text2.style.left = value * 4.5 + "px";
+        text4.style.op = value * 1.5 + "px";
+        text3.style.left = value * 1.5 + "px";
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script type="text/javascript">
+      function validateForm() {
+        if (document.myForm.videolink.value == "") {
+          alert("Please provide the Product video lonk!");
+          return false;
+        }
+        if (document.myForm.backpic.value == "") {
+          alert("Please provide the Picture!");
+          return false;
+        }
+        if (document.myForm.title.value == "") {
+          alert("Please select the titel!");
+          return false;
+        }
+        if (document.myForm.caption.value == "") {
+          alert("Please provide the Caption!");
+          return false;
+        }
+        if (document.myForm.catagory.value == "") {
+          alert("Please provide the catagory!");
+          return false;
+        }
+        return true;
+      }
+    </script>
+  </head>
+  <body>
+    <form
+      action="videoinsert.php"
+      method="post"
+      name="myForm"
+      onsubmit="return validateForm()"
+    >
+      video link: <input type="text" name="videolink" /><br /><br />
+      picture: <input type="text" name="backpic" /><br /><br />
+      <br /><br />
+      title: <input type="text" name="title" /><br /><br />
+      caption: <input type="text" name="caption" /><br /><br />
+      catagory:
+      <select name="catagory">
+        <option value="ANIMATION">ANIMATION</option>
+        <option value="SPEED ART">SPEED ART</option>
+        <option value="COLLABORATION">COLLABORATION</option>
+        
+      </select>
+      <br /><br />
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>

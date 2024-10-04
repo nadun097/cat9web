@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script type="text/javascript">
+      function validateForm() {
+        if (document.myForm.pname.value == "") {
+          alert("Please provide the Product Name!");
+          return false;
+        }
+        if (document.myForm.pprice.value == "") {
+          alert("Please provide the Product Price!");
+          return false;
+        }
+        if (document.myForm.ptype.value == "") {
+          alert("Please select the Product Type!");
+          return false;
+        }
+        if (document.myForm.cap.value == "") {
+          alert("Please provide the Caption!");
+          return false;
+        }
+        if (document.myForm.rate.value == "") {
+          alert("Please provide the Rate!");
+          return false;
+        }
+        return true;
+      }
+    </script>
+  </head>
+  <body>
+    <form
+      action="doInsert.php"
+      method="post"
+      name="myForm"
+      onsubmit="return validateForm()"
+    >
+      Product Name: <input type="text" name="pname" /><br /><br />
+      Product Price: <input type="text" name="pprice" /><br /><br />
+      Product Type:
+      <select name="ptype">
+        <option value="arts">Arts</option>
+        <option value="customized t shirt">Customized T-Shirt</option>
+        <option value="store product">Store Product</option>
+        <option value="stickers">Stickers</option>
+      </select>
+      <br /><br />
+      Caption: <input type="text" name="cap" /><br /><br />
+      Rate: <input type="text" name="rate" /><br /><br />
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>

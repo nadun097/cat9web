@@ -1,0 +1,78 @@
+footer{ 
+  width: 100%;
+  right: 0;
+  position: absolute;
+  bottom: -600%;
+  background: rgb(31, 31, 31);
+  color: rgb(159, 159, 159);
+  padding: 20px 0 25px;
+  font-size: 13px;
+  line-height: 20px;
+
+}
+
+.row{
+  width: 85%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+
+}
+.col{
+  flex-basis: 25%;
+  padding: 10px;
+
+}
+
+.logof{
+  opacity: 50%;
+  width: 200px;
+  margin: 15px;
+}
+
+.col h3{
+  width: fit-content;
+  margin-bottom: 40px ;
+  position: relative;
+}
+
+.email-id{
+  width: fit-content;
+  border-bottom: 1px solid rgb(121, 120, 120);
+  border-bottom: 20px 0;
+}
+
+.social-icons {
+  display: flex;
+  gap: 5px;
+  position: relative;
+  padding-bottom: 10px; 
+}
+
+.social-icons::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: -100%;
+  width: 3000%;
+  height: 50px;
+  background-color: rgb(24, 24, 24);
+  z-index: 0;
+}
+
+.social-icons i {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  line-height: 40px;
+  font-size: 30px;
+  color: rgb(103, 103, 103);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-bottom: -px; 
+  z-index: 1;
+}

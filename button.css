@@ -1,0 +1,70 @@
+.btn {
+  border: 1px solid #ffffff;
+  background: rgb(255, 255, 255);
+  padding: 10px 20px;
+  font-size: 16px;
+  font-family: "Formula1 Display Regular";
+  cursor: pointer;
+  margin: 30px 0;
+  z-index: 2;
+  border-radius: 0px;
+  transition: 0.4s;
+  position: relative;
+  overflow: hidden;
+}
+.btn::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  background: #000000;
+  border-radius: 120%;
+  z-index: -1;
+  transition: width 0.3s ease, height 0.3s ease, top 0.3s ease,
+    left 0.3s ease;
+  transform: translate(-50%, -50%);
+}
+
+.btn1 {
+  color: #000000;
+}
+.btn1:hover {
+  color: #ffffff;
+}
+
+.btn1::before {
+  width: 0px;
+  height: 0px;
+}
+
+
+
+.btn1:hover::before {
+  width: 140px;
+  height: 140px;
+  top: 50%;
+  left: 50%;
+}
+
+.btn .textq {
+  position: relative;
+  display: inline-block;
+  transition: transform 0.4s ease;
+}
+
+.btn:hover .textq {
+  transform: translateX(20%);
+}
+.btn:hover.textq.textq2 {
+  position: relative;
+  display: inline-block;
+  transition: transform 1s ease, opacity 0.4s ease;
+}
+
+.btn1:hover.textq.textq2 {
+  color: #ffffff;
+}
+.btn1:hover .textq .textq2 {
+  opacity: 0;
+}
