@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="button.css" />
+    <link rel="stylesheet" href="css/button.css" />
   
 
     <link
@@ -32,7 +32,7 @@
 
     <script src="croll.js"></script>
 
-    <link rel="stylesheet" href="page01style.css" />
+    <link rel="stylesheet" href="css/page01style.css" />
     <style>
       .btn {
         border: 1px solid #ffffff;
