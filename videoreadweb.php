@@ -116,7 +116,7 @@
     <div class="videogal-container">
       <img
       class="videogal"
-      src="Comp 1_2.gif"
+      src="image/Comp 1_2.gif"
       alt="Eminem - Revenge X (Official Lyric Video)"
       />
     </div>
@@ -192,9 +192,9 @@ if (mysqli_num_rows($result) > 0) {
 
     <footer >
 <div class = "spons"><center>
-    <img src ="c l o t h i n g.png" class ="logof-f" >
-    <img src ="mu-logo-full-gray.png" class ="logof-f" >
-    <img src ="reasons  podcast.png" class ="logof-f2" ></center>
+    <img src ="image/c l o t h i n g.png" class ="logof-f" >
+    <img src ="image/mu-logo-full-gray.png" class ="logof-f" >
+    <img src ="image/reasons  podcast.png" class ="logof-f2" ></center>
    
   </div>
   <div class="row">
